@@ -68,7 +68,10 @@
                  <asp:ListItem>0.25</asp:ListItem>
                  <asp:ListItem>0.50</asp:ListItem>
                  <asp:ListItem>0.75</asp:ListItem>
-             </asp:BulletedList>   </h2>
+             </asp:BulletedList>   
+
+                    You are free to use any language to improve it
+                </h2>
                 
             </div>
         </div>
