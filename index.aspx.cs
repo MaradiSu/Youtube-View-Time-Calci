@@ -33,7 +33,7 @@ namespace Youtube_View_Time_Calci
             }else if (speedcontrol == 1)
             {
                 // ScriptManager.RegisterStartupScript(this, GetType(), "alertMessage", "alertMessage();", true);
-                speedvalue=Calculate_ViewTime(100);
+                speedvalue=Calculate_ViewTime(100); 
                savedminutes = float.Parse(txtbxDuration.Text.Trim()) - speedvalue;
                 ScriptManager.RegisterStartupScript(this, GetType(),savedminutes.ToString(), "alertMessage("+savedminutes.ToString() + ");", true);
             }
@@ -64,6 +64,33 @@ namespace Youtube_View_Time_Calci
                 ScriptManager.RegisterStartupScript(this, GetType(), savedminutes.ToString(), "alertMessage(" + savedminutes.ToString() + ");", true);
 
             }
+
+            if (speedcontrol == 6)
+            {
+                speedvalue = Calculate_ViewTime(-25);
+                savedminutes = float.Parse(txtbxDuration.Text.Trim()) - speedvalue;
+                ScriptManager.RegisterStartupScript(this, GetType(), savedminutes.ToString(), "alertMessageForIncrese(" + savedminutes.ToString() + ");", true);
+
+            }
+            if (speedcontrol == 7)
+            {
+                speedvalue = Calculate_ViewTime(-50);
+                savedminutes = float.Parse(txtbxDuration.Text.Trim()) - speedvalue;
+                ScriptManager.RegisterStartupScript(this, GetType(), savedminutes.ToString(), "alertMessageForIncrese(" + savedminutes.ToString() + ");", true);
+
+            }
+            if (speedcontrol == 8)
+            {
+                speedvalue = Calculate_ViewTime(-75);
+                savedminutes = float.Parse(txtbxDuration.Text.Trim()) - speedvalue;
+                ScriptManager.RegisterStartupScript(this, GetType(), savedminutes.ToString(), "alertMessageForIncrese(" + savedminutes.ToString() + ");", true);
+
+            }
+
+
+
+
+
         }
     }
 }

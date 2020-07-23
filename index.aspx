@@ -15,7 +15,12 @@
     <script type="text/javascript">  
         function alertMessage(printstring) {
             alert('you saved '+printstring + ' minutes');  
-        }  
+        } 
+        function alertMessageForIncrese(printstring) {
+            alert('You increase ' + printstring + ' minutes');
+        } 
+
+
     </script>
   </head>
 <body>
@@ -48,6 +53,11 @@
                             <asp:ListItem>1.5X</asp:ListItem>
                             <asp:ListItem>1.75X</asp:ListItem>
                             <asp:ListItem>2X</asp:ListItem>
+
+                            <asp:ListItem>0.25X</asp:ListItem>
+                            <asp:ListItem>0.5X</asp:ListItem>
+                            <asp:ListItem>0.75X</asp:ListItem>
+
                         </asp:DropDownList></asp:TableHeaderCell>
                 </asp:TableHeaderRow>
                 <asp:TableHeaderRow HorizontalAlign="Center">
@@ -68,10 +78,7 @@
                  <asp:ListItem>0.25</asp:ListItem>
                  <asp:ListItem>0.50</asp:ListItem>
                  <asp:ListItem>0.75</asp:ListItem>
-             </asp:BulletedList>   
-
-                    You are free to use any language to improve it
-                </h2>
+             </asp:BulletedList>   </h2>
                 
             </div>
         </div>
